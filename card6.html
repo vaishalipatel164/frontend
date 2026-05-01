@@ -5,97 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Card</title>
     <style>
-      .contents {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+      *{
+        margin: 0;
+        padding: 0;
       }
-      .main1 {
-        width: 300px;
-        height: 300px;
-        background: blue;
-        border: 2px solid;
-        box-shadow: 5px 5px 10px;
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-      }
-      .para {
+      .container{
+        background: rgb(210, 211, 212);
+        width: 100%;
+        
+        height: 100vh;
+        
         text-align: center;
-        color: white;
       }
-      .header{
-        font-size: 16px;
-
+      .wapper{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.3s;
+        
       }
-      .secheader{
+      h1{
+        color: darkmagenta;
+        font-size: 60px;
+        font-style: italic;
+        padding: 10px;
+      }
+      .card{
+        width: 300px;
+        height: 350px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px gray;
+        padding: 15px;
+      }
+      .card:hover{
+        border: 2px solid brown;
+           /* transform: scale(1.05); */
+           transform: scale(1.02);
+      }
+      h5{
+        font-size: 20px;
+      
+      }
+      h2{
         font-size: 30px;
+      
+      }
+      p{
+        padding-top: 30%;
+        font-size: 70px;
         font-weight: bold;
-        margin-top: -30px;
+        color: brown;
+        text-shadow: 10px 10px 15px ;
+    
       }
-      .par {
-        font-size: 80px;
-        font-weight: bolder;
-        margin-top: -10px;
-        text-shadow: 10px 10px 20px white;
-
-
+      .bg1{
+        background-image: linear-gradient(to top, blue,rgb(179, 221, 245));
       }
+      .bg2 {
+  background-image: linear-gradient(to top, green,rgb(176, 248, 162));
+}
+      .bg3 {
+  background-image: linear-gradient(to top, yellow,#f0f09e);
+}
+      .bg4 {
+  background-image: linear-gradient(to top, rgb(255, 123, 0),rgb(252, 188, 128));
+}
+      .bg5 {
+  background-image: linear-gradient(to top, crimson ,  rgb(247, 165, 182));
+}
+      .bg6 {
+         background-image: linear-gradient(to top, red ,rgb(250, 158, 158));
+ /* background-image: radial-gradient(circle at top, red, rgb(250, 158, 158)); */
+ /* background: radial-gradient(circle at top, #ff0000 0%, #fa9e9e 100%); */
+ 
+}
     </style>
   </head>
+
   <body>
-    <div class="contents">
-      <div class="main1">
-        <div class="para">
-          <h4 class="header">Tony</h4>
-          <h1 class="secheader">Romo</h1>
-          <br />
-          <p class="par">9</p>
+    <div class="container">
+      <h1>Welcome to card</h1>
+      <div class="wapper">
+        <div class="card bg1">
+          <h5>Tony</h5>
+          <h2>Romo</h2>
+          <p>9</p>
         </div>
-      </div>
 
-      <div class="main1">
-        <div class="para">
-          <h4>Aaron</h4>
-          <h1>Rodgers</h1>
-          <br />
-          <p class="par">12</p>
+        <div class="card bg2">
+          <h5>Aaron</h5>
+          <h2>Rodgers</h2>
+          <p>12</p>
         </div>
-      </div>
 
-      <div class="main1">
-        <div class="para">
-          <h4>Ben</h4>
-          <h1>Roethlisberger</h1>
-          <br />
-          <p class="par">7</p>
+        <div class="card bg3">
+          <h5>Ben</h5>
+          <h2>Roethlisberger</h2>
+          <p>7</p>
         </div>
-      </div>
 
-      <div class="main1">
-        <div class="para">
-          <h4>Peyton</h4>
-          <h1>Manning</h1>
-          <br />
-          <p class="par">18</p>
+        <div class="card bg4">
+          <h5>Peyton</h5>
+          <h2>Manning</h2>
+          <p>18</p>
         </div>
-      </div>
 
-      <div class="main1">
-        <div class="para">
-          <h4>Tom</h4>
-          <h1>Brady</h1>
-          <br />
-          <p class="par">12</p>
+        <div class="card bg5">
+          <h5>Tom</h5>
+          <h2>Brady</h2>
+          <p>12</p>
         </div>
-      </div>
 
-      <div class="main1">
-        <div class="para">
-          <h4>Drew</h4>
-          <h1>Brees</h1>
-          <br />
-          <p class="par">9</p>
+        <div class="card bg6">
+          <h5>Drew</h5>
+          <h2>Brees</h2>
+          <p>9</p>
         </div>
       </div>
     </div>
