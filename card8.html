@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Project</title>
+    <style>
+      .contents {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: gray;
+        width: 100%;
+        height: 50vh;
+      }
+      .maine {
+        width: 300px;
+        height: 410px;
+        border: 2px;
+        box-shadow: 5px 5px 10px gray;
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+      }
+      img {
+        width: 100%;
+        height: 120px;
+      }
+      .para {
+        position: relative;
+        bottom: 10%;
+      }
+      .bttn1 {
+        width: 100px;
+        padding: 5px;
+        border: 2px solid blue;
+        color: blue;
+        background: black;
+      }
+      .bttn2 {
+        width: 100px;
+        padding: 5px;
+        border: 2px solid white;
+        color: white;
+        background: black;
+        margin-left: 20px;
+      }
+      h1 {
+        margin: 0px;
+      }
+      h6 {
+        color: blue;
+        margin: 0px;
+        font-size: 16px;
+      }
+      .maine:hover {
+        transform: 0.3s;
+        border: 2px solid azure;
+        box-shadow: 5px 5px 10px white;
+      }
+      .bttn1:hover,
+      .bttn2:hover {
+        background: brown;
+        border: 2px;
+      }
+
+      .img1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: relative;
+        top: -10%;
+        left: -30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="maine">
+        <img src="./image/lakes.jpeg" alt="" />
+
+        <img class="img1" src="./image/1.jpg" alt="" />
+        <div class="para">
+          <h1>Hans Down</h1>
+          <h6>Engineer</h6>
+          <p>
+            I'm looking for something that can deliver a 50-pound payload of
+            snow on a small feminine target. Can you suggest something?
+            Hello...?
+          </p>
+          <button class="bttn1">FOLLOW</button>
+          <button class="bttn2">MORE INFO</button>
+        </div>
+      </div>
+
+      <div class="maine">
+        <img src="./image/nature2.jpg" alt="" />
+
+        <img class="img1" src="./image/2.jpg" alt="" />
+        <div class="para">
+          <h1>Wisteria Wedget</h1>
+          <h6>Photographer</h6>
+          <p>
+            Calvin: I'm a genius, but I'm a minunderstood genius. Hobbes: What's
+            misunderstood about you? Calvin: Nobody thinks I'm a genius.
+          </p>
+          <button class="bttn1">FOLLOW</button>
+          <button class="bttn2">MORE INFO</button>
+        </div>
+      </div>
+
+      <div class="maine">
+        <img src="./image/nature4.jpg" alt="" />
+
+        <img class="img1" src="./image/29358.jpg" alt="" />
+        <div class="para">
+          <h1>Desmond Eagle</h1>
+          <h6>Accountant</h6>
+          <p>
+            If you want to stay dad you've got to polish your image. I think the
+            image we need to create for you is "repentant but learning".
+          </p>
+          <button class="bttn1">FOLLOW</button>
+          <button class="bttn2">MORE INFO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
