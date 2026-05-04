@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Project</title>
+    <style>
+      .event {
+        width: 1100px;
+        height: 700px;
+        border: 2px solid blue;
+        box-shadow: 2px 2px 5px solid gray;
+        background-image: linear-gradient(
+          rgb(25, 25, 245),
+          rgb(113, 113, 223),
+          rgb(27, 27, 238)
+        );
+        padding: 10px;
+
+      }
+      h1 {
+        font-size: 65px;
+        color: white;
+        text-shadow: 3px 3px 5px;
+      }
+      p {
+        font-family: cursive;
+      }
+      .colors {
+        color: rgb(187, 74, 112);
+      }
+      .bttn1 {
+        width: 150px;
+        padding: 10px;
+        border: 1px solid wheat;
+        color: white;
+        background: rgb(248, 117, 139);
+        font-weight: bolder;
+        border-radius: 12px;
+      }
+      .bttn2 {
+        width: 170px;
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
+        background: blue;
+        margin-left: 20px;
+        font-weight: bolder;
+        border-radius: 12px;
+      }
+      p {
+        color: white;
+        font-size: 18px;
+      }
+      .cards{
+        width: 120px;
+        height: 90px;
+        border: 1px solid rgb(45, 45, 66);
+        box-shadow: 2px 2px 5px solid gray;
+        border-radius: 12px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 3px;
+         background-color: rgb(66, 66, 167);
+      }
+      .pre{
+        display: flex;
+        gap: 10px;
+      }
+      .cards:hover{
+        transform: 0.3s;
+        border: 2px solid rgb(126, 134, 134);
+        box-shadow: 2px 2px 5px rgb(230, 218, 218);
+      }
+      img{
+        position: absolute;
+        width: 530px;
+        height: 340px;
+        border-radius: 12px;
+        top: 10%;
+        right: 45%;
+      }
+      img:hover{
+         transform: 1.03s;
+        border: 2px solid rgb(67, 67, 88);
+        box-shadow: 5px 5px 10px rgb(230, 218, 218);
+      }
+     .bttn1:hover,
+     .bttn2:hover{
+        transform: 1.03s;
+        border: 2px solid rgb(67, 67, 88);
+        box-shadow: 5px 5px 10px rgb(230, 218, 218); 
+        background-color:  rgb(231, 231, 235);
+        color: black;
+
+     }
+     h3{
+        margin-top: -15px;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="event">
+        <div class="head">
+          <h1>Explore, Join & <br> Manage</h1>
+          <h1 class="colors">College Events <br> Beautifully</h1>
+          <p>
+            A premium college event portal where students can discover <br> events,
+            register instantly and explore joined participants <br> with a modern,
+            engaging and responsive experience.
+          </p>
+          <button class="bttn1">Explore Events</button>
+          <button class="bttn2">students Registration</button>
+        </div><br>
+        <div class="pre">
+            <img src="./image/college events.jpg" alt="">
+          <div class="cards">
+            <h2>0+</h2>
+            <h3>Events</h3>
+          </div>
+
+          <div class="cards">
+            <h2>500+</h2>
+            <h3>Students</h3>
+          </div>
+
+          <div class="cards">
+            <h2>36</h2>
+            <h3>Categories</h3>
+          </div>
+
+          <div class="cards">
+            <h2>Premium</h2>
+            <h3>Experience</h3>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
