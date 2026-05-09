@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+           *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+           width: 450px;
+        height: 200px;
+        background-color: aquamarine;
+        border: 2px;
+        display: flex; 
+        gap: 20px;
+        }
+         .card {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border: 2px solid black;
+        font-size: 22px;
+        font-weight: bolder ;
+      }
+      .box1{
+        align-self: flex-start;
+      }
+       .box2{
+        align-self:flex-end;
+      }
+       .box3{
+        align-self:center;
+      } 
+      .box4{
+        align-self:baseline;
+      }
+       .box5{
+        align-self:stretch;
+      }
+      
+    </style>
+</head>
+<body>
+    <h2> Align-self</h2>
+    <div class="box">
+      <div class="card box1">1</div>
+      <div class="card box2">2</div>
+      <div class="card box3">3</div>
+      <div class="card box4">4</div>
+      <div class="card box5">5</div>
+    </div>
+</body>
+</html>

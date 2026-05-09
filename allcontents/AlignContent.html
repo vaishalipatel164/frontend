@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+           width: 450px;
+        height: 200px;
+        background-color: aquamarine;
+        border: 2px;
+        display: flex; 
+        }
+         .card {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border: 2px solid black;
+        font-size: 22px;
+        font-weight: bolder ;
+      }
+      .box1{
+         align-content:space-around ; 
+      }
+      .box2{
+         align-content:baseline ; 
+      }
+      .box3{
+         align-content:center ; 
+      }
+      .box4{
+         align-content:end; 
+      }
+    </style>
+</head>
+<body>
+      <h2>Align-content</h2>
+    <div class="box">
+      <div class="card box1">1</div>
+      <div class="card box2">2</div>
+      <div class="card box3">3</div>
+      <div class="card box4">4</div>
+    </div>
+</body>
+</html>
