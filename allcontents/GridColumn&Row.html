@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeated Column & Row</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: brown;
+            height: 600px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 40px 1fr 40px;
+            text-align: center;
+        }
+        .box{
+            background: orangered;
+            border: 2px solid blueviolet;
+            color: bisque;
+        }
+        .Header{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .content{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .Footer{
+            grid-column: 1/5;
+        }
+        
+    </style>
+</head>
+<body>
+  <h2>Repeated Column & Row</h2>
+  <div class="box container">
+    <div class=" box Header">Header</div>
+    <div class="box Menu" >Menu</div>
+    <div class="box content">content</div>
+    <div class="box Sliding">Sliding</div>
+    <div class="box Footer">Footer</div>
+  </div>  
+</body>
+</html>
