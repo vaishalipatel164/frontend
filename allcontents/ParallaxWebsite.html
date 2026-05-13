@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../image/1.jpg" />
+    <title>Parallax Website</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #111;
+        color: white;
+      }
+
+      .wrapper {
+        perspective: 10px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      /* HERO SECTION */
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+
+      .hero img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* .background {
+        transform: translateZ(-40px) scale(5);
+      } */
+
+      .foreground {
+        transform: translateZ(-20px) scale(3);
+      }
+
+      .hero h1 {
+        position: absolute;
+        top: 5rem;
+        font-size: 5rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      }
+
+      /* CONTENT SECTION */
+
+      section {
+        background-color: rgb(45, 45, 45);
+        padding: 5rem 0;
+      }
+
+      .heading {
+        font-size: 4rem;
+        padding: 0 10rem;
+      }
+
+      .text {
+        font-size:1.5rem;
+        padding: 2rem 10rem;
+        margin: 3rem 0;
+        text-align: justify;
+        line-height: 1.8;
+        font-style: oblique;
+      }
+
+      /* PARALLAX IMAGE SECTION */
+
+      .bg {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bg1 {
+        background-image: url("../image/Bara_Imambara_.jpg");
+      }
+
+      .bg2 {
+        background-image: url("../image/Chhotaimambara.jpg");
+      }
+
+      .bg3 {
+        background-image: url("../image/RumiDarwaza.jpg");
+      }
+
+      .desc {
+        position: absolute;
+        background-color: white;
+        color: black;
+        padding: 0.5rem 2rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- HERO SECTION -->
+
+      <div class="hero">
+        <!-- <img src="../image/lucknow.webp" class="background" alt="Lucknow" /> -->
+
+        <img src="../image/lucknow.webp" class="foreground" alt="Nature" />
+
+        <h1>City of Nawabs</h1>
+      </div>
+
+      <!-- CONTENT -->
+
+      <section>
+        <h2 class="heading">Historic & Architectural Marvels</h2>
+
+        <p class="text">
+          Lucknow is an enchanting blend of history, architecture, and culture.
+          Famous for its elegant Nawabi heritage, Lucknow is often referred to
+          as the City of Tehzeeb due to its refined manners, sophisticated
+          language, and deep-rooted traditions.
+        </p>
+
+        <!-- BARA IMAMBARA -->
+
+        <div class="bg bg1">
+          <h2 class="desc">Bara Imambara</h2>
+        </div>
+
+        <p class="text">
+          The Bara Imambara, also known as the Asafi Imambara, is one of the
+          most iconic monuments of Lucknow. Built in 1784 by Nawab
+          Asaf-ud-Daula, it is famous for its massive central hall and the Bhool
+          Bhulaiya maze. The structure was built during a famine to provide
+          employment to the people. <br />
+          The construction of Bara Imambara started in year 1780, a year of
+          devastating famine. One of Asaf-ud-Daula's objectives in embarking on
+          the grandiose project was to provide employment for people in the
+          region for almost a decade while the famine lasted.<br />
+        </p>
+
+        <!-- CHHOTA IMAMBARA -->
+
+        <div class="bg bg2">
+          <h2 class="desc">Chhota Imambara</h2>
+        </div>
+
+        <p class="text">
+          Chhota Imambara, also known as the Palace of Lights, was built by
+          Muhammad Ali Shah in 1838. The monument is decorated with beautiful
+          chandeliers, Islamic calligraphy, and stunning architecture, making it
+          one of the finest examples of Awadhi culture. <br />
+          The Chhota Imambara stands to the west of Bara Imambara and an
+          imposing gateway known as Rumi Darwaza.The building is also known as
+          the Palace of Lights because of its decorations and chandeliers during
+          special festivals, like Muharram
+        </p>
+
+        <!-- RUMI DARWAZA -->
+
+        <div class="bg bg3">
+          <h2 class="desc">Rumi Darwaza</h2>
+        </div>
+
+        <p class="text">
+          Rumi Darwaza is a magnificent gateway built by Nawab Asaf-ud-Daula in
+          1784. Inspired by Turkish architecture, this sixty-foot-tall gateway
+          is one of the most recognized landmarks of Lucknow and reflects the
+          grandeur of Awadhi architecture. <br />
+          The darwaza is distinct from Mughal architecture in terms of style and
+          materials used. The design consists of a big arch and on top of that,
+          there is a half-spherical dome resting on half-octagonal plan. The
+          gate is built using thin burnt clay bricks and lime-crushed brick
+          aggregate mortar (Lakhori and Surkhi respectively, which was prevalent
+          during the rule of Nawabs in the 18th century). The gate boasts of
+          intricate carvings of flowers
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
