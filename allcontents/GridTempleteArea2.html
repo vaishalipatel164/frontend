@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            display: grid;
+            background-color: black;
+            gap: 10px;
+            text-align: center;
+            grid-template: repeat(3,1rf)/repeat(3,1ref);
+            grid-template-areas: "a a a"
+            "b b c"
+            "b b c"
+            "d d d"
+           ;
+        }
+        .box1{
+            background-color: palevioletred;
+            grid-area: a;
+        }
+        .box2{
+            background-color: skyblue;
+            grid-area: b;
+        }
+        .box3{
+            background-color: coral;
+            grid-area: c;
+        }
+        .box4{
+            background-color: rgb(90, 216, 118);
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">Navbar</div>
+        <div class="box2">Main</div>
+        <div class="box3"> Sidebar</div>
+        <div class="box4">Footer</div>
+    </div>
+</body>
+</html>
