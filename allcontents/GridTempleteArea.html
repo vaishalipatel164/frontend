@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Templete Areas</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template: repeat(3, 1rf)/repeat(3,1rf);
+            grid-template-areas: "a a b"
+            "c c b"
+            "d e e";
+            background-color: black;
+            gap: 10px;
+        }
+        .boxa{
+            background-color: aqua;
+            grid-area: a;
+        }
+        .boxb{
+            background-color: rgb(235, 23, 235);
+            grid-area: b;
+        }
+        .boxc{
+            background-color: yellow;
+            grid-area: c;
+        }
+        .boxd{
+            background-color: rgb(82, 211, 82);
+            grid-area: d;
+        }
+        .boxe{
+            background-color: orange;
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxa">Box A</div>
+        <div class="boxb">Box B</div>
+        <div class="boxc">Box C</div>
+        <div class="boxd">Box D</div>
+        <div class="boxe">Box E</div>
+        <!-- <div class="boxf">Box F</div>
+        <div class="boxg">Box G</div>
+        <div class="boxh">Box H</div>
+        <div class="boxi">Box I</div> -->
+    </div>
+</body>
+</html>
