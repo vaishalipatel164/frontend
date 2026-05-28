@@ -3,56 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-    <style>
-      h1 {
-        color: brown;
-      }
-      .nae {
-        color: rgb(54, 218, 32);
-      }
-      #abc {
-        color: darkmagenta;
-      }
-    </style>
+    <title>form</title>
   </head>
   <body>
-    <form>
-      <h1 class="nae">Registration Form</h1>
-      <label for="name"> First-Name</label>
-      <input type="name" id="name" placeholder="first name" />
-      <br /><br />
+    <h1>Registration Form</h1>
+    <form style="width: 300px; background: antiquewhite">
+      <fieldset style="border: 8px solid orange">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="name" />
+        <br /><br />
 
-      <label style="background: olivedrab" for="last-name">Last-Name</label>
-      <input type="text" id="last-name" placeholder="last-name" />
-      <br /><br />
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="address" />
+        <br /><br />
 
-      <label for="contact">Contact</label>
-      <input type="text" id="contact" placeholder="contact" />
-      <br /><br />
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="email" />
+        <br /><br />
 
-      <label for="email">Email</label>
-      <input type="text" id="email" placeholder="email" />
-      <br /><br />
+        <label for="number">Number</label>
+        <input type="text" id="number" placeholder="number" />
+        <br /><br />
 
-      <label for="password"> Password</label>
-      <input type="password" id="password" placeholder="password" />
-      <br /><br />
+        <label for="gendar">Gender</label>
+        <input type="checkbox" name="gender" value="male" />Male
+        <input type="checkbox" name="gender" value="female" />Female
+        <br /><br />
 
-      <label for="gender">Gender</label>
-      <input type="radio" name="gender" id="gender" />male
-      <input type="radio" name="gender" id="gender" />female
-      <!-- <input type="radio" class="gend" id="gendar" />other -->
-      <br /><br />
+        <label for="sel">Select</label>
+        <select id="sel">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JS</option>
+        </select>
+        <br /><br />
 
-      <label for="textarea">Text Area</label>
-      <textarea name="textarea" id="textArea"></textarea>
-      <h1 class="nae">Registration Form</h1>
-      <h1>Registration Form</h1>
-      <h1>Registration Form</h1>
-      <h1 class="nae" id="abc">Registration Form</h1>
-      <h1 id="abc">Registration Form</h1>
-      <button>Send</button>
+        <label for="textArea">Textarea</label>
+        <textarea name="textarea" id="textarea"></textarea>
+        <br /><br />
+
+        <button>Send</button>
+        <br /><br />
+      </fieldset>
     </form>
   </body>
 </html>
